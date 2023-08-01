@@ -61,10 +61,16 @@ void PrintArray(string[] array)
     }
     System.Console.Write("]");
 }
-string[] createArray = CreateArray();
-string[] formatArray = FormatArray(createArray);
-System.Console.Write("Ваш массив: ");
-PrintArray(createArray);
-System.Console.WriteLine();
-System.Console.Write($"Массив из {formatArray.Length} элементов в котором длинна каждого элемента не превышает трех значений: ");
-PrintArray(formatArray);
+
+void Main()
+{
+    string[] createArray = CreateArray();
+    string[] formatArray = FormatArray(createArray);
+    System.Console.Write("Ваш массив: ");
+    PrintArray(createArray);
+    System.Console.WriteLine();
+    System.Console.Write($"Массив из {formatArray.Length} элементов в котором длинна каждого элемента не превышает трех значений: ");
+    PrintArray(formatArray);
+}
+
+Main();
